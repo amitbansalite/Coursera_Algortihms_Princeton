@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/agarwalam.ABCOIND/Downloads/algs4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/agarwalam.ABCOIND/Downloads/stdlib.jar"/>
+	<classpathentry kind="lib" path="C:/Users/agarwalam.ABCOIND/.gradle/caches/artifacts-24/filestore/junit/junit/4.5/jar/7059d3d3bedc1fca9b33cde8503095b3576a0bba/junit-4.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/agarwalam.ABCOIND/Downloads/algs4-package.jar"/>
+	<classpathentry kind="lib" path="C:/Users/agarwalam.ABCOIND/Downloads/stdlib-package.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -5,6 +5,12 @@ import edu.princeton.cs.introcs.StdOut;
 // uses more space to store the size of each tree, 
 // so that tree is more balanced and root of smaller tree changes 
 
+// union logic is important,
+	// 1. find root of both vertex to be connected
+	// 2. find size of which one is smaller
+	// 3. change root of smaller to higher
+	// 4. increment size(larger_root) += size(smaller_root)
+
 // find and union will take lg(N) time
 
 public class QuickUnionW {

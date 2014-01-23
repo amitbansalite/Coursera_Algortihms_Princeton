@@ -24,6 +24,7 @@ public class EdgeWeightedGraph {
 		
 		adj[v].add(e);
 		adj[w].add(e);		
+		E++;
 	}
 	
 	public int V(){		

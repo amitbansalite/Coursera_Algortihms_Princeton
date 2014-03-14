@@ -73,7 +73,7 @@ public class BST<Key extends Comparable<Key>, Value>{
 		inorder(x.left, q);
 		q.enqueue(x.key);
 		inorder(x.right, q);		
-	}
+	}	
 	
 	// inorder traversal : without using recursion
 	private void inorder_constantSpace(Node x, Queue<Key> q){

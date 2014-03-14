@@ -10,6 +10,7 @@ import edu.princeton.cs.algs4.*;
 
 //many applications like finding in which order to take courses, given many courses and the inter-dependencies among them
 	// given many tasks to be completed with precedence constraints, determine in which order to execute tasks 
+
 public class TopologicalSort {
 
 	private boolean[] marked;

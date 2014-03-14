@@ -30,8 +30,10 @@ public class IntervalST<Key extends Comparable<Key>, Value> {
 	
 	
 	// search for an intersecting interval
-	Interval searchIntersectingInterval(Key lo, Key hi){
-		Node x = root;
+	int searchIntersectingInterval(Key lo, Key hi){
+		return 0;
+		
+		/*Node x = root;
 		
 		while(x != null){
 			
@@ -40,7 +42,7 @@ public class IntervalST<Key extends Comparable<Key>, Value> {
 			else if (x.left.max < lo)						x = x.right;
 			else											x = x.left;
 		}
-		return null;		
+		return null;		*/
 	}
 	
 

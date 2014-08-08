@@ -14,6 +14,7 @@ public class LinkedStackOfStrings {
 		return first == null;
 	}
 	
+	// add new element as the 1st node
 	public void push(String item){
 		Node oldFirst = first;
 		first = new Node();
@@ -21,11 +22,14 @@ public class LinkedStackOfStrings {
 		first.next = oldFirst;		
 	}
 	
+	// return the first node
 	public String pop(){
 		
 		if(! isEmpty()){
 			String item = first.item;
-			first = first.next;
+			Node tmp = first;
+			first = first.next;			
+			tmp = null;
 			return item;			
 		}
 		

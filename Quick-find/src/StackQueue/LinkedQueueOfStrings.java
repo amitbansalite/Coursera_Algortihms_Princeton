@@ -1,5 +1,6 @@
 package StackQueue;
 
+// look at the Queue class in the algs4 library
 public class LinkedQueueOfStrings {
 
 	private Node first, last = null;
@@ -9,6 +10,7 @@ public class LinkedQueueOfStrings {
 		Node next;
 	}
 	
+	// add new element as the last node
 	void enqueue(String item){
 		Node oldLast = last;
 		last = new Node();
@@ -23,6 +25,7 @@ public class LinkedQueueOfStrings {
 	}
 	
 	String dequeue(){
+	  // check for empty condition
 		String item = first.item;
 		first = first.next;
 		if(isEmpty()){

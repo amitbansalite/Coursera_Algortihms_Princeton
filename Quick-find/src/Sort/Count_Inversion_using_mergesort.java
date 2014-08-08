@@ -15,9 +15,11 @@ public class Count_Inversion_using_mergesort {
 	
 public static int count_inversion(int[] aux, int[] a, int low, int mid, int high, int count){	
 		
+        // copy all elements from a into aux
 		for (int i=low; i<=high; i++){
 			aux[i] = a[i];
 		}
+		
 		
 		int i=low, j=mid+1;
 		for(int k=low; k<=high; k++){

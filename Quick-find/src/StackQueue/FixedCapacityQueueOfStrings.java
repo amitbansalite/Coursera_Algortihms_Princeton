@@ -1,5 +1,6 @@
 package StackQueue;
 
+// refer to the ResizingArrayQueue class in the algs4 library
 public class FixedCapacityQueueOfStrings {
 	
 	private String[] s;
@@ -16,8 +17,9 @@ public class FixedCapacityQueueOfStrings {
 	private void resize(int capacity){
 		String[] copy = new String[capacity];
 
+		int j=0;
 		for(int i=head; i<tail; i++){
-			copy[i] = s[i];
+			copy[j++] = s[i];			
 		}
 		head = 0;
 		tail = capacity/2 + 1;

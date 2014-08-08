@@ -46,7 +46,7 @@ public class BST_to_DLL {
 	}
 	
 	
-	// InOrder traversal mechanism
+	// Easier to follow : InOrder traversal mechanism
 	// invoked as (root, null, null)
 	public void treeToDll_Inorder(Node current, Node prev, Node head){		
 		if ( current == null)
@@ -61,7 +61,7 @@ public class BST_to_DLL {
 			head = current;			
 		}
 		else{
-			prev.right = current.left;			
+			prev.right = current;			
 		}
 			
 		// following 3 lines of code is only required if : required to make double LL circular

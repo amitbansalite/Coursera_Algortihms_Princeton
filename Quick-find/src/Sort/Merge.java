@@ -20,9 +20,10 @@ public class Merge {
 
         int i = lo, j = mid+1;
         for (int k = lo; k <= hi; k++) {
-            if      (i > mid)              a[k] = aux[j++];
-            else if (j > hi)               a[k] = aux[i++];
-            else if (less(aux[j], aux[i])) a[k] = aux[j++];
+            if      (i > mid)              a[k] = aux[j++]; // left array is empty
+            else if (j > hi)               a[k] = aux[i++]; // right array is empty
+            
+            else if (less(aux[j], aux[i])) a[k] = aux[j++]; // if both not empty, then compare values
             else                           a[k] = aux[i++];
         }
     }

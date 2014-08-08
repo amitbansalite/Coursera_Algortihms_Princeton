@@ -41,7 +41,7 @@ public class mColors {
 			{
 				color[vertex] = i;
 
-				if ( vertex == n)
+				if ( vertex == G.V())
 				{
 					PrintColors();
 					return;

@@ -1,14 +1,9 @@
 
-// keys should be immutable
-
-//underflow : throw exception if empty
-// overflow : add no arg constructor and resize array
-
-// 
+// keys should be immutable and comparable
 
 package PriorityQueue;
 
-// implementation for max PQ
+// implementation for MAX PQ
 public class BinaryHeap_PQ<Key extends Comparable<Key>> {
 
 	private Key[] pq;
@@ -18,10 +13,11 @@ public class BinaryHeap_PQ<Key extends Comparable<Key>> {
 		pq = (Key[]) new Comparable[capacity+1];
 	}	
 	
-	
+	// heap sort algo. Rearranges the array in ascending order, using the natural order.
+
 	public void sort(){
 		
-		for(int i=N/2; i>=1; i++){
+		for(int i=N/2; i>=1; i--){
 			sink(i);
 		}
 		
@@ -42,9 +38,9 @@ public class BinaryHeap_PQ<Key extends Comparable<Key>> {
 	}
 	
 	public Key delMax(){
-		
+		if (isEmpty()) return null; // exception
 		Key max = pq[1];
-		exch(1,N--);
+		exch(1,N--);		
 		sink(1);
 		pq[N+1] = null;
 		return max;

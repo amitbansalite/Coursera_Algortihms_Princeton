@@ -2,6 +2,8 @@ package Graph;
 
 import edu.princeton.cs.algs4.*;
 
+//  Whenever you examine the node n in a topological ordering,
+  // you have the guarantee that you've already traversed every possible path to n.
 
 // works only on DAG : directed acyclic graph
 

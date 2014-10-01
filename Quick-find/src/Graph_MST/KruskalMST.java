@@ -2,6 +2,15 @@ package Graph_MST;
 
 import edu.princeton.cs.algs4.*;
 
+
+/*Given a connected, undirected graph, a spanning tree of that graph is a subgraph that is a tree and 
+ * connects all the vertices together. 
+ * We can also assign a weight to each edge, and use this to assign a weight to a spanning tree by 
+ * computing the sum of the weights of the edges in that spanning tree. 
+ * 
+ * A minimum spanning tree is with weight less than or equal to the weight of every other spanning tree. 
+*/
+
 // 1. sort the edges by weight in ascending order
 // 2. take the next edge from MinPQ  (in ascending order of edge weight)
 // 3. add it to the tree T unless doing so would create a cycle

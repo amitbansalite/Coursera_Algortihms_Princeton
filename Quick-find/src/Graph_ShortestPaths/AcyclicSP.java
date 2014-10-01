@@ -25,6 +25,13 @@ public class AcyclicSP {
 			distTo[i] = Double.POSITIVE_INFINITY;
 		distTo[s] = 0.0;
 		
+		
+		/*You have to take advantage of the information that a topological ordering gives you. 
+		 * Whenever you examine the node n in a topological ordering, you have the guarantee 
+		 * that you've already traversed every possible path to n. Using this it's clear to see that 
+		 * you can generate the shortest path with one linear scan of a topological ordering 
+		*/
+		
 		Topological topological = new Topological(G);
 		for ( int v : topological.order())
 			for ( DirectedEdge e : G.adj(v))

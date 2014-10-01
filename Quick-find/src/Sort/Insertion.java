@@ -20,7 +20,9 @@ public class Insertion {
 				if( less(a[j], a[j-1]) )
 					exch(a, j , j-1);
 			}			
+			//assert isSorted(a, 0, i);
 		}		
+		//assert isSorted(a);
 	}
 	
 	private static boolean less(Comparable a, Comparable b){

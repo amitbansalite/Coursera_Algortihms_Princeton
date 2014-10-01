@@ -2,11 +2,12 @@ package Graph_MST;
 
 import edu.princeton.cs.algs4.*;
 
+// A lot easier to understand than Kruskal' algo.
+  
 //Basic Algorithm
 //1. Start with vertex 0 and greedily grow tree T
 //2. Add to T the min weight edge with exactly one end point in T
 //3. Repeat until V-1 edges
-
 
 //lazy approach : we allow edge to be on the PQ even though we know it is obsolete 
 
